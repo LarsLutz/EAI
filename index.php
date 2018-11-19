@@ -7,7 +7,7 @@ if($method =="POST"){
 	$requestBody =file_get_contents('php://input');
 	$json =json_decode($requestBody);
 	
-	$text=$json ->queryResult->parameters->Topping;
+	$text=$json ->result->parameters->Topping;
 	
 	switch ($text){
 		
