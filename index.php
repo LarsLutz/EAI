@@ -11,15 +11,15 @@ if($method =="POST"){
 	
 	switch ($text){
 		
-		case "Ham":
+		case 'Ham':
 		$speech ="I order a ham pizza";
 		break;
 		
-		case "cheese":
+		case 'cheese':
 		$speech ="I order a cheese pizza";
 		break;
 		
-		case "Vegi":
+		case 'Vegi':
 		$speech ="I order a vegi pizza";
 		break;
 		
