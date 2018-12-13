@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Collection;
  
 @SpringBootApplication
-public class HelloWorldRestApplication {
+public class PaymentApplication {
  
     public static void main(String[] args) {
-        SpringApplication.run(HelloWorldRestApplication.class, args);
+        SpringApplication.run(PaymentApplication.class, args);
     }
 }
  
