@@ -20,11 +20,3 @@ public class PaymentApplication {
 }
  
  
-@RestController
-class HelloWorld {
- 
-    @RequestMapping(value = "/hello", method = RequestMethod.GET, produces = MediaType.TEXT_PLAIN_VALUE)
-    ResponseEntity<String> helloWorld() {
-        return new ResponseEntity<String>("Hello World!", HttpStatus.OK);
-    }
-}
