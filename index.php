@@ -11,20 +11,20 @@ if($method =="POST"){
 	
 	switch ($text){
 		
-		case 'ham':
-		$speech ="I order a ham pizza";
+		case 'Nesquik':
+		$speech ="I order Nesquik flakes";
 		break;
 		
-		case 'cheese':
-		$speech ="I order a cheese pizza";
+		case 'Frostys':
+		$speech ="I order Frostys";
 		break;
 		
-		case 'vegi':
-		$speech ="I order a vegi pizza";
+		case 'Frootloops':
+		$speech ="I order Frootloops";
 		break;
 		
 		default:
-		$speech="Sorry, I havent this type of pizza.";
+		$speech="Sorry, I havent found this label.";
 		break;
 		
 	}
