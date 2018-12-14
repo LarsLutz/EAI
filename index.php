@@ -8,7 +8,7 @@ if($method =="POST"){
 	$json =json_decode($requestBody);
 	
 	$text=$json ->result->parameters->topping;
-	
+	$speech="Fail";
 	switch ($text){
 		
 		case 'Nesquik':
@@ -32,7 +32,7 @@ if($method =="POST"){
 	$response =new \stdClass();
 	$response ->speech =$speech;
 	$response->displayText=$speech;
-	$response-> source="webhook";
+	$response-> source=$text;
 	echo json_encode($response);
 	
 }
