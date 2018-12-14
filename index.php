@@ -24,7 +24,7 @@ if($method =="POST"){
 		break;
 		
 		default:
-		$speech="Sorry, I havent found this label.";
+		$speech= $text;
 		break;
 		
 	}
