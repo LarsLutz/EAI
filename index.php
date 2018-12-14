@@ -7,8 +7,7 @@ if($method =="POST"){
 	$requestBody =file_get_contents('php://input');
 	$json =json_decode($requestBody);
 	
-	$text=$json ->result->parameters->topping;
-	$speech="Fail";
+	$text=$json ->result->parameters->Topping;
 	switch ($text){
 		
 		case 'Nesquik':
@@ -24,7 +23,7 @@ if($method =="POST"){
 		break;
 		
 		default:
-		$speech= $text;
+		$speech= "Can't find that lable";
 		break;
 		
 	}
