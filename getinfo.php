@@ -2,7 +2,7 @@
 
 include_once 'db.php';
 
-$sql = "SELECT      Punkte,Account
+$sql = "SELECT      Punkte, Account
                         FROM
                                kunde
                         WHERE
