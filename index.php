@@ -29,8 +29,8 @@ if($method =="POST"){
         include_once 'getinfo.php';
 	
 	$response =new \stdClass();
-	$response ->speech =$speech."  You have ".$point." points now!";
-	$response->displayText=$speech."  You have ".$point." points now!";
+	$response ->speech =$speech."  You have ".$point." points on your Account ".$acc." now!";
+	$response->displayText=$speech."  You have ".$point." points on your Account ".$acc." now!";
 	$response-> source=$text;
 	echo json_encode($response);
 	
