@@ -29,16 +29,11 @@ if($method =="POST"){
 	}
 	
 	$response =new \stdClass();
-	$response ->speech =$speech;
-	$response->displayText=$speech;
+	$response ->speech =$speech."\n Du hast jetzt 10 Punkte";
+	$response->displayText=$speech."\n Du hast jetzt 10 Punkte";
 	$response-> source=$text;
 	echo json_encode($response);
 	
-	$response2 =new \stdClass();
-	$response2 ->speech ="Du hast jetzt 10 Punkte";
-	$response2->displayText= "Du hast jetzt 10 Punkte";
-	$response2-> source=$text;
-	echo json_encode($response2);
 	
 }
 else
