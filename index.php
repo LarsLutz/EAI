@@ -29,8 +29,8 @@ if($method =="POST"){
 	}
 	
 	$response =new \stdClass();
-	$response ->speech =$speech."\n Du hast jetzt 10 Punkte";
-	$response->displayText=$speech."\n Du hast jetzt 10 Punkte";
+	$response ->speech =$speech."  You have 10 points now!";
+	$response->displayText=$speech."  You have 10 points now!";
 	$response-> source=$text;
 	echo json_encode($response);
 	
