@@ -2,7 +2,7 @@
 
 include_once 'db.php';
 
-$sql = "SELECT      Punkte
+$sql = "SELECT      Punkte,Account
                         FROM
                                kunde
                         WHERE
@@ -11,6 +11,7 @@ $sql = "SELECT      Punkte
         $result = mysqli_query($connid, $sql) OR die("<pre>\n" . $sql . "</pre>\n" . mysqli_error());
         $row = mysqli_fetch_assoc($result);
         $point = $row['Punkte']+10;
+        $acc= $row['Account'];
 
         $sql = "UPDATE
                                 kunde
